@@ -1,0 +1,333 @@
+﻿<!doctype html><html>
+<head>
+<meta charset="utf-8" />
+<title>Tableau Workbook Links</title>
+<style>
+        span.pagenumber
+          {
+          visibility: hidden;
+          //visibility:visible;
+          }
+          body { font-family: Arial, Helvetica, Gill Sans, Gill Sans MT, sans-serif;
+          color:#414141; /* Dark Gray */
+          font-stretch:normal;
+          letter-spacing:0.5px;
+          text-indent:40px; }
+          p.header { font-size:xx-large;
+          font-family: Gill Sans, Gill Sans MT, Arial, Helvetica, sans-serif;
+          color:#666666; 
+          text-indent:0px;
+          padding-left:40px;
+          }
+          li.header { font-size:xx-large;
+          font-family: Gill Sans, Gill Sans MT, Arial, Helvetica, sans-serif;
+          color:#666666;
+          text-indent:0px;
+          }
+          .h_rule { 	color:	#1f447d; }
+          p.topic {	line-height:0;
+          font-size:x-large;
+          padding-top:12px;
+          color:#666666; } /* Mid Gray */
+          a.practice_link { line-height:1.5;
+          font-size:large;
+          padding-left:110px;
+          list-style-position:inside;
+          }
+          a.practice_link:link{
+            color:#eb912c;
+          }
+          a.practice_link:active{
+            color:#7099a5;
+          }
+          a.practice_link:hover{
+            color:#7099a5;
+          }
+          a.practice_link:visited{
+            color:#7099a5;
+          }
+          .practice_link_dummy { 
+              font-size:large;
+              padding-left:72px;
+              color:#666666; }
+          div.legal {
+              text-align:center;
+              font-size:small;
+              color:#696969; 
+          }
+          .top{
+              height:225px;
+          }
+          .toptext{
+              padding-top:25px;
+          }
+          .sparkle{
+              height:30px;
+              vertical-align:middle;
+              padding-left:5px;
+              padding-bottom:4px;
+          }
+          ul#tabs {
+               list-style-type: none; margin: 0 0 0 0; padding: 0 0 0.3em 0;
+          }
+          ul#tabs li { display: inline; }
+          ul#tabs li a {
+               color: #42454a; 
+               background-color: #dedbde; 
+               border: 1px solid #666666; 
+               border-bottom: none; 
+               padding: 0.24em 0.5em 0.24em 0.24em; 
+               text-decoration: none; 
+          }
+          ul#tabs li a:hover { background-color: #ffffff; }
+          ul#tabs li a.selected {
+               color: #000; 
+               background-color: #ffffff; 
+               font-weight: bold; 
+               padding: 0.5em 0.5em 0.27em 0.2em; 
+               border-bottom: none;}
+          div.tabContent { border: 1px solid #666666; padding: 0.5em; }
+          div.tabContent.hide { display: none; }
+              img { border:0; }
+      </style>
+</head>
+<body onload="init()">
+<div class="top">
+<div class="toptext">
+<p class="header">Practice workbooks for Tableau Classroom Training <br /><strong>Tableau Desktop I Classroom Training</strong></p>
+<p><em>Click on a tab to switch between workbook options.</em></p>
+</div>
+</div>
+<ul id="tabs">
+<li class="header">
+<a href="#starters"><img class="sparkle" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA5AAAAOECAYAAADXC96pAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAFXNJREFUeNrs3bFOG0kcwOH4tP1RIFHGeQCUVBEdmyIP4QgJCuTSgipUwVCFypFLK4ULBA9B4XUXUTniAdgrI6UgT7A3jlJcpCi3TuzNzvr7pNF28fAfy+YXL9AqiuIRADTZ8eg6DZdJVY836HZapg5AE/1lBAAAAAhIAAAABCQAAAACEgAAAAEJAACAgAQAAEBAAgAAgIAEAABAQAIAACAgAQAAEJAAAAAISAAAAAQkAAAAAhIAAAAEJAAAAAISAAAAAQkAAICABAAAQEACAAAgIAEAABCQAAAAICABAAAQkAAAAAhIAAAABCQAAAACEgAAAAEJAACAgAQAAAABCQAAgIAEAABAQAIAACAgAQAAEJAAAAAISAAAAAQkAAAACEgAAAAEJAAAAAISAAAAAQkAAICABAAAQEACAAAgIAEAAEBAAgAAICABAAAQkAAAAAhIAAAABCQAAAACEgAAAAEJAAAAAhIAAAABCQAAgIAEAABAQAIAACAgAQAAEJAAAAAISAAAABCQAAAACEgAAAAEJAAAAAISAAAAAQkAAICABAAAQEACAACAgAQAAEBAAgAAICABAAAQkAAAAAhIAAAABCQAAAACEgAAAAQkAAAAAhIAAAABCQAAgIAEAABAQAIAACAgAQAAEJAAAAAgIAEAABCQAAAACEgAAAAEJAAAAAISAACABmgVRWEKABE6Hl0fhEvbJEqZz2m/wsc7M/LSskG3kxkDQBwSIwCI1jwgd42hlk6NYLGINAKAOLiFFQAAAAEJAADA8riFFX7i83A7DZdJnfe42btrOSkAYvHq7ftYfgHH9OrkMHVi8D2fQAIAACAgAQAAEJAAAAAISAAAAAQkAAAAAhIAAAABCQAAAAISAAAAAQkAAICABAAAQEACAAAgIAEAABCQAAAACEgAAAAQkAAAAAhIAAAABCQAAAACEgAAAAEJAACAgAQAAEBAAgAAQJAYAUCcBt1OagrlHI+u57OaVHg2LVMHoIl8AgkAAICABAAAQEACAAAgIAEAABCQAAAACEgAAAAEJAAAAAhIAAAABCQAAAACEgAAAAEJAACAgAQAAEBAAgAAICABAABAQAIAACAgAQAAEJAAAAAISAAAAAQkAAAAAhIAAAABCQAAAAISAAAAAQkAAICABAAAQEACAAAgIAEAABCQAAAACEgAAAAQkAAAAAhIAAAABCQAAAACEgAAAAEJAACAgAQAAEBAAgAAgIAEAABAQAIAACAgAQAAEJAAAAAISAAAAAQkAAAAAhIAAAAEJAAAAAISAAAAAQkAAICABAAAQEACAAAgIAEAABCQAAAAICABAAAQkAAAAAhIAAAABCQAAAACEgAAAAEJAACAgAQAAAABCQAAgIAEAABAQAIAACAgAQAAEJAAAAAISAAAAAQkAAAACEgAAAAEJAAAAAISAAAAAQkAAICABAAAQEACAAAgIAEAAEBAAgAAICABAAAQkAAAAAhIAAAABCQAAAACEgAAAAEJAAAAAhIAAAABCQAAgIAEAABAQAIAACAgAQAAaILECABYA3lYZ8YAAAISAH5q0O3MA7JvEgDwe9zCCgAAgIAEAABAQAIAACAgAQAAEJAAAAAISAAAAAQkAAAACEgAAAAEJAAAAAISAAAAAQkAAICABAAAQEACAAAgIAEAAEBAAgAAUFKrKApTWJHPw+2+KUSvHdZ+zfd45piil2/27sbGAP/v1dv389flA5OI2mkk+/wnLK/NcRtfnRzmxrBciRF4gcTzjD9u6psUKK3tdY+KPPZci14WloBcMrewAgAAICABAAAQkAAAAAhIAAAABCQAAAACEgAAAAEJAAAAAhIAAAABCQAAgIAEAABAQAIAACAgAQAAEJAAAAAISAAAABCQAAAACEgAAAAEJAAAAAISAAAAAQkAAICABAAAQEACAACAgAQAAEBAAgAAICABAAAQkAAAAAhIAAAABCQAAAACEgAAAAQkAAAAAhIAAAABCQAAgIAEAABAQAIAACAgAQAAEJAAAADwVWIEq7PZu2uZQtw+D7fTcJl4ngEAgIAEACJydXKYhYv/OIvYq7fvi0i2Og3Pt9SJwffcwgoAAICABAAAQEACAAAgIAEAABCQAAAACEgAAAAEJAAAAAhIAAAABCQAAAACEgAAAAEJAACAgAQAAEBAAgAAICABAABAQAIAACAgAQAAEJAAAAAISAAAAAQkAAAAAhIAAAABCQAAAAISAAAAAQkAAICABAAAQEACAAAgIAEAABCQAAAACEgAAAAQ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CEgAAAAEJAAAAAISAAAAAQkAAICABAAAQEACAACAgAQAAEBAAgAAICABAAAQkAAAAAhIAAAABCQAAAACEgAAAAQkAAAAAhIAAAABCQAAgIAEAABAQAIAACAgAQAAEJAAAAAgIAEAABCQAAAACEgAAAAEJAAAAAISAAAAAQkAAICABAAAAAEJAACAgAQAAEBAAgAAICABAAAQkAAAAAhIAAAABCQAAAAISAAAAAQkAAAAAhIAAAABCQAAgIAEAABAQAIAACAgAQAAQEACAAAgIAEAABCQAAAACEgAAAAEJAAAAAISAAAAAQkAAAACEgAAAAEJAACAgAQAAEBAAgAAICABAAAQkAAAAAhIAAAAEJAAAAAsJDECACI1bcDXkDtGAAQkAKzY1sVdagoAUC23sAIAACAgAQAAEJAAAAAISAAAAAQkAAAAAhIAAAABCQAAAAISAAAAAQkAAICABAAAQEACAAAgIAEAABCQAAAACEgAAAAQkAAAAAhIAAAABCQAAAACEgAAAAEJAACAgAQAAEBAAgAAgIAEAABAQAIAACAgAQAAEJAAAAAISAAAAAQkAAAAAhIAAAAEJAAAAAISAAAAAQkAAICABAAAQEACAAAgIAEAABCQAAAAICABAAAor1UUhSmsyIcnzzNTiFo7rMeR7PVjWA+OLFqznfvbI2OAEi/ML988C5d3JhG13Uj2+WX++uy4onaU35w7wyVLjMALJI3w1AiANbHh/ZWK/O251ojXC5bMLawAAAAISAAAAAQkAAAAAhIAAAABCQAAgIAEAABAQAIAAICABAAAQEACAAAgIAEAABCQAAAACEgAAAAEJAAAAAISAAAABCQAAAACEgAAAAEJAACAgAQAAEBAAgAAICABAAAQkAAAACAgAQAAEJAAAAAISAAAAAQkAAAAAhIAAAABCQAAgIAEAAAAAQkAAICABAAAQEACAAAgIAEAABCQAAAACEgAAAAEJAAAAHyVGMFKTY0gau2wHkey149hPTiyaM2MAEp78P4avd1I9vnF63MjXi9YslZRFKYAP/DhyfN+uJxGst0XO/e3mVMDoO7aL9/E8s3nNL85T50YfM8trAAAAAhIAAAABCQAAAACEgAAAAEJAACAgAQAAEBAAgAAgIAEAABAQAIAACAgAQAAEJAAAADUUmIEADTNXneY1mxLD5ej3szJACAgAaB+JjXbzzSs1LEAEDu3sAIAACAgAQAAEJAAAAAISAAAAAQkAAAAAhIAAAABCQAAAAISAAAAAQkAAICABAAAQEACAAAgIAEAABCQAAAACEgAAAAQkAAAAAhIAAAABCQAAAACEgAAAAEJAACAgAQAAEBAAgAAgIAEAABAQAIAACAgAQAAEJAAAAAISAAAAAQkAAAAAhIAAAAEJAAAAAISAAAAAQkAAICABAAAQEACAAAgIAEAABCQAAAAICABAAAQkAAAAAhIAAAABCQAAAACEgAAAAEJAACAgAQAAAABCQAAgIAEAABAQAIAACAgAQAAEJAAAAAISAAAAAQkAAAACEgAAAAEJAAAAAISAAAAAQkAAICABAAAQEACAAAgIAEAAEBAAgAAICABAAAQkAAAAAhIAAAABCQAAAACEgAAAAEJAAAAAhIAAAABCQAAgIAEAABAQAIAACAgAQAAEJAAAAAISAAAABCQAAAACEgAAAAEJAAAAAISAAAAAQkAAICABAAAQEACAACAgAQAAEBAAgAAICABAAAQkAAAAAhIAAAABCQAAABrIzECgHrb6w43wuWZSURtI5xjagzlXY56mSkACEgAFjePx4kxRO2pM1xYywgA6sctrAAAAAhIAAAABCQAAAACEgAAAAEJAACAgAQAAEBAAgAAgIAEAABAQAIAACAgAQAAEJAAAAAISAAAAAQkAAAAAhIAAAAEJAAAAAISAAAAAQkAAICABAAAQEACAAAgIAEAABCQAAAAICABAAAQkAAAACxVYgTwYzv3t/1w6ZsEACxPfnPeMgWIl08gAQAAEJAAAAAISAAAAAQkAAAAAhIAAAABCQAAgIAEAAAAAQkAAEA5raIoTAGARtnrDuv25ja9HPVSJwNA7HwCCQAAgIAEAABAQAIAACAgAQAAEJAAAAAISAAAAAQkAAAACEgAAAAEJAAAAAISAAAAAQkAAICABAAAQEACAAAgIAEAAEBAAgAAICABAAAQkAAAAAhIAAAABCQAAAACEgAAAAEJAAAAAhIAAAABCQAAgIAEAABAQAIAACAgAQAAEJAAAAAISAAAABCQAAAACEgAAAAEJAAAAAISAAAAAQkAAICABAAAQEACAACAgAQAAEBAAgAAICABAAAQkAAAAAhIAAAABCQAAAACEgAAAAQkAAAAAhIAAAABCQAAgIAEAABAQAIAACAgAQAAEJAAAAAgIAEAABCQAAAACEgAAAAEJAAAAAISAAAAAQkAAICABAAAAAEJAACAgAQAAEBAAgAAICABAAAQkAAAAAhIAAAABCQAAAAISAAAAAQkAAAAAhIAAAABCQAAgIAEAABAQAIAACAgAQAAQEACAAAgIAEAABCQAAAACEgAAAAEJAAAAAISAAAAAQkAAAACEgAAAAEJAACAgAQAAEBAAgAAICABAAAQkAAAAAhIAAAA+K9/BRgAavn+h78TSBsAAAAASUVORK5CYII=" alt="Tableau Sparkle logo" height="30" /> Starters</a>
+</li><li class="header">
+<a href="#solutions"><img class="sparkle" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA5AAAAOECAYAAADXC96pAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAFXNJREFUeNrs3bFOG0kcwOH4tP1RIFHGeQCUVBEdmyIP4QgJCuTSgipUwVCFypFLK4ULBA9B4XUXUTniAdgrI6UgT7A3jlJcpCi3TuzNzvr7pNF28fAfy+YXL9AqiuIRADTZ8eg6DZdJVY836HZapg5AE/1lBAAAAAhIAAAABCQAAAACEgAAAAEJAACAgAQAAEBAAgAAgIAEAABAQAIAACAgAQAAEJAAAAAISAAAAAQkAAAAAhIAAAAEJAAAAAISAAAAAQkAAICABAAAQEACAAAgIAEAABCQAAAAICABAAAQkAAAAAhIAAAABCQAAAACEgAAAAEJAACAgAQAAAABCQAAgIAEAABAQAIAACAgAQAAEJAAAAAISAAAAAQkAAAACEgAAAAEJAAAAAISAAAAAQkAAICABAAAQEACAAAgIAEAAEBAAgAAICABAAAQkAAAAAhIAAAABCQAAAACEgAAAAEJAAAAAhIAAAABCQAAgIAEAABAQAIAACAgAQAAEJAAAAAISAAAABCQAAAACEgAAAAEJAAAAAISAAAAAQkAAICABAAAQEACAACAgAQAAEBAAgAAICABAAAQkAAAAAhIAAAABCQAAAACEgAAAAQkAAAAAhIAAAABCQAAgIAEAABAQAIAACAgAQAAEJAAAAAgIAEAABCQAAAACEgAAAAEJAAAAAISAACABmgVRWEKABE6Hl0fhEvbJEqZz2m/wsc7M/LSskG3kxkDQBwSIwCI1jwgd42hlk6NYLGINAKAOLiFFQAAAAEJAADA8riFFX7i83A7DZdJnfe42btrOSkAYvHq7ftYfgHH9OrkMHVi8D2fQAIAACAgAQAAEJAAAAAISAAAAAQkAAAAAhIAAAABCQAAAAISAAAAAQkAAICABAAAQEACAAAgIAEAABCQAAAACEgAAAAQkAAAAAhIAAAABCQAAAACEgAAAAEJAACAgAQAAEBAAgAAQJAYAUCcBt1OagrlHI+u57OaVHg2LVMHoIl8AgkAAICABAAAQEACAAAgIAEAABCQAAAACEgAAAAEJAAAAAhIAAAABCQAAAACEgAAAAEJAACAgAQAAEBAAgAAICABAABAQAIAACAgAQAAEJAAAAAISAAAAAQkAAAAAhIAAAABCQAAAAISAAAAAQkAAICABAAAQEACAAAgIAEAABCQAAAACEgAAAAQkAAAAAhIAAAABCQAAAACEgAAAAEJAACAgAQAAEBAAgAAgIAEAABAQAIAACAgAQAAEJAAAAAISAAAAAQkAAAAAhIAAAAEJAAAAAISAAAAAQkAAICABAAAQEACAAAgIAEAABCQAAAAICABAAAQkAAAAAhIAAAABCQAAAACEgAAAAEJAACAgAQAAAABCQAAgIAEAABAQAIAACAgAQAAEJAAAAAISAAAAAQkAAAACEgAAAAEJAAAAAISAAAAAQkAAICABAAAQEACAAAgIAEAAEBAAgAAICABAAAQkAAAAAhIAAAABCQAAAACEgAAAAEJAAAAAhIAAAABCQAAgIAEAABAQAIAACAgAQAAaILECABYA3lYZ8YAAAISAH5q0O3MA7JvEgDwe9zCCgAAgIAEAABAQAIAACAgAQAAEJAAAAAISAAAAAQkAAAACEgAAAAEJAAAAAISAAAAAQkAAICABAAAQEACAAAgIAEAAEBAAgAAUFKrKApTWJHPw+2+KUSvHdZ+zfd45piil2/27sbGAP/v1dv389flA5OI2mkk+/wnLK/NcRtfnRzmxrBciRF4gcTzjD9u6psUKK3tdY+KPPZci14WloBcMrewAgAAICABAAAQkAAAAAhIAAAABCQAAAACEgAAAAEJAAAAAhIAAAABCQAAgIAEAABAQAIAACAgAQAAEJAAAAAISAAAABCQAAAACEgAAAAEJAAAAAISAAAAAQkAAICABAAAQEACAACAgAQAAEBAAgAAICABAAAQkAAAAAhIAAAABCQAAAACEgAAAAQkAAAAAhIAAAABCQAAgIAEAABAQAIAACAgAQAAEJAAAADwVWIEq7PZu2uZQtw+D7fTcJl4ngEAgIAEACJydXKYhYv/OIvYq7fvi0i2Og3Pt9SJwffcwgoAAICABAAAQEACAAAgIAEAABCQAAAACEgAAAAEJAAAAAhIAAAABCQAAAACEgAAAAEJAACAgAQAAEBAAgAAICABAABAQAIAACAgAQAAEJAAAAAISAAAAAQkAAAAAhIAAAABCQAAAAISAAAAAQkAAICABAAAQEACAAAgIAEAABCQAAAACEgAAAAQkAAAAAhIAAAABCQAAAACEgAAAAEJAACAgAQAAEBAAgAAgIAEAABAQAIAACAgAQAAEJAAAADUVmIEAMTo0+vtrAFfxnjr4m7sNAEQkACwWrsN+BoyxwhATNzCCgAAgIAEAABAQAIAACAgAQAAEJAAAAAISAAAAAQkAAAACEgAAAAEJAAAAAISAAAAAQkAAICABAAAQEACAAAgIAEAAEBAAgAAICABAAAQkAAAAAhIAAAABCQAAAACEgAAAAEJAAAAAhIAAAABCQAAgIAEAABAQAIAACAgAQAAEJAAAAAISAAAABCQAAAACEgAAAAEJAAAAAISAAAAAQkAAICABAAAQEACAACAgAQAAEBAAgAAICABAAAQkAAAAAhIAAAABCQAAAACEgAAAAQkAAAAAhIAAAABCQAAgIAEAABAQAIAACAgAQAAEJAAAAAgIAEAABCQAAAACEgAAAAEJAAAAAISAAAAAQkAAICABAAAAAEJAADAQhIjAAAAqrDXHT4Ll3c129bR5ag3czoCEgAAqJeNsHZruCdKcgsrAAAAAhIAAAABCQAAgIAEAACgjvwSnQUcj67b4dKu6OHyQbeTmzoAACAg43QQ1mlFj3UWVt/IAQCAunALKwAAAAISAAAAAQkAAICABAAAQEACAAAgIAEAABCQAAAAICABAAAQkAAAAAhIAAAABCQAAAACEgAAAAEJAACAgAQAAIBHjxIjgJ/KwzozBgBYmljeV3NHBQISFrLZu5u/efRNAgCW4+rk0PsqRMwtrAAAAAhIAAAABCQAAAACEgAAAAEJAACAgAQAAEBAAgAAgIAEAABAQAIAACAgAQAAEJAAAAAISAAAAAQkAAAAAhIAAAAEJAAAAAISAAAAAQkAAICABAAAQEACAAAgIAEAABCQAAAAICABAAAQkAAAAAhIAAAABCQAAAACEgAAAAEJAACAgAQAAAABCQAAgIAEAABAQAIAACAgAQAAEJAAAAAISAAAAAQkAAAACEgAAAAEJAAAAAISAAAAAQkAAICABAAAQEACAAAgIAEAAEBAAgAAICABAAAQkAAAAAhIAAAABCQAAAACEgAAAAEJAAAAAhIAAAABCQAAgIAEAABAQAIAAFBjiREAsfv0ersdLm2TIELt8PxNjWG9bF3cZaYACEiAP+cgrFNjIEL73xbrpWUEQKzcwgoAAICABAAAQEACAAAgIAEAABCQAAAACEgAAACazZ/xAACAX7TXHabhkppEae0a7ung2zkiIAEAYKXm4eFvEcfN3+NdgFtYAQAAKCU5Hl2nxlBau8rHcjYLmQ26nQdjAACAFQZkWBNjqKX9Rz5OX8SLsDJjAACA1XELKwAAAAISAAAAAQkAAICABAAAQEACAAAgIAEAABCQAAAAICABAAAQkAAAAAhIAAAABCQAAAACEgAAAAEJAACAgAQAAAABCQAAgIAEAABAQAIAACAgAQAAEJAAAAAISAAAAAQkAAAACEgAAAAEJAAAAAISAACA6iVGUFv/hJUv6d/Kl/hvrcrv7nHmKQMAAKsPyBd13dyg28nqtJ/j0XU/XE4rerhx+Pr7nqIAAEBtArJukQYAAEA9+RlIAAAASvEzkAAA8OvysKbGUNpGWE9rtqePYT04GgEJAAArdTnqjcNlbBLl7HWHabhMarato3COmdMpxy2sAAAACEgAAAAEJAAAAAISAAAAAQkAAICABAAAoNn8GQ+gCTIjWEunDfgapp6/AAhIgAptXdxlvglfP59ebzchILPw/O07TQBi4RZWAAAABCQAAAACEgAAAAEJAACAgAQAAEBAAgAAICABAABAQAIAACAgAQAAEJAAAAAISAAAAAQkAAAAAhIAAAABCQAAAAISAAAAAQkAAICABAAAQEACAAAgIAEAABCQAAAACEgAAAAQkAAAAAhIAAAABCQAAAACEgAAAAEJAACAgAQAAEBAAgAAgIAEAABAQAIAACAgAQAAEJAAAAAISAAAAAQkAAAAAhIAAAAEJAAAAAISAAAAAQkAAICABAAAQEACAAAgIAEAABCQAAAAICABAAAQkAAAAAhIAAAABCQAAAACEgAAAAEJAACAgAQAAAABCQAAwCISI4Af+/Dk+UG4HESy3aOd+9uZUwOg7tov32SRbHWW35wfOTEQkFD6PS6s3Uj2uuG4AIjErhFAvNzCCgAAgIAEAABAQAIAACAgAQAAEJAAAAAISAAAAAQkAAAACEgAAAAEJAAAAAISAAAAAQkAAICABAAAQEACAAAgIAEAAEBAAgAAICABAAAQkAAAAFQuMYKFjMPKKnqs3LgBAAABGalBt5MLOwAAYF25hRUAAAABCQAAgIAEAABAQAIAAFBHfokOAABQlYewpjXcEwISAACok8tRbxYuqUnEyy2sAAAACEgAAAAEJAAAAAISAAAAAQkAAICABAAAQEACAACAgAQAAEBAAgAAICABAAAQkAAAAAhIAAAABCQAAAACEgAAAAQkAAAAAhIAAAABCQAAgIAEAABAQAIAACAgAQAAEJAAAAAgIAEAABCQAAAACEgAAAAEJAAAAAISAAAAAQkAAICABAAAAAEJAACAgAQAAEBAAgAAICABAAAQkAAAAAhIAAAABCQAAAAISAAAAAQkAAAAAhIAAAABCQAAgIAEAABAQAIAACAgAQAAQEACAAAgIAEAABCQAAAACEgAAAAEJAAAAAISAAAAAQkAAAACEgAAAAEJAACAgAQAAEBAAgAAICABAAAQkAAAAAhIAAAAEJAAAAAsJDECACI1bcDXkDtGAAQkAKzY1sVdagoAUC23sAIAACAgAQAAEJAAAAAISAAAAAQkAAAAAhIAAAABCQAAAAISAAAAAQkAAICABAAAQEACAAAgIAEAABCQAAAACEgAAAAQkAAAAAhIAAAABCQAAAACEgAAAAEJAACAgAQAAEBAAgAAgIAEAABAQAIAACAgAQAAEJAAAAAISAAAAAQkAAAAAhIAAAAEJAAAAAISAAAAAQkAAICABAAAQEACAAAgIAEAABCQAAAAICABAAAor1UUhSmsyIcnzzNTiFo7rMeR7PVjWA+OLFqznfvbI2OAEi/ML988C5d3JhG13Uj2+WX++uy4onaU35w7wyVLjMALJI3w1AiANbHh/ZWK/O251ojXC5bMLawAAAAISAAAAAQkAAAAAhIAAAABCQAAgIAEAABAQAIAAICABAAAQEACAAAgIAEAABCQAAAACEgAAAAEJAAAAAISAAAABCQAAAACEgAAAAEJAACAgAQAAEBAAgAAICABAAAQkAAAACAgAQAAEJAAAAAISAAAAAQkAAAAAhIAAAABCQAAgIAEAAAAAQkAAICABAAAQEACAAAgIAEAABCQAAAACEgAAAAEJAAAAHyVGMFKTY0gau2wHkey149hPTiyaM2MAEp78P4avd1I9vnF63MjXi9YslZRFKYAP/DhyfN+uJxGst0XO/e3mVMDoO7aL9/E8s3nNL85T50YfM8trAAAAAhIAAAABCQAAAACEgAAAAEJAACAgAQAAEBAAgAAgIAEAABAQAIAACAgAQAAEJAAAADUUmIEADTNXneY1mxLD5ej3szJACAgAaB+JjXbzzSs1LEAEDu3sAIAACAgAQAAEJAAAAAISAAAAAQkAAAAAhIAAAABCQAAAAISAAAAAQkAAICABAAAQEACAAAgIAEAABCQAAAACEgAAAAQkAAAAAhIAAAABCQAAAACEgAAAAEJAACAgAQAAEBAAgAAgIAEAABAQAIAACAgAQAAEJAAAAAISAAAAAQkAAAAAhIAAAAEJAAAAAISAAAAAQkAAICABAAAQEACAAAgIAEAABCQAAAAICABAAAQkAAAAAhIAAAABCQAAAACEgAAAAEJAACAgAQAAAABCQAAgIAEAABAQAIAACAgAQAAEJAAAAAISAAAAAQkAAAACEgAAAAEJAAAAAISAAAAAQkAAICABAAAQEACAAAgIAEAAEBAAgAAICABAAAQkAAAAAhIAAAABCQAAAACEgAAAAEJAAAAAhIAAAABCQAAgIAEAABAQAIAACAgAQAAEJAAAAAISAAAABCQAAAACEgAAAAEJAAAAAISAAAAAQkAAICABAAAQEACAACAgAQAAEBAAgAAICABAAAQkAAAAAhIAAAABCQAAABrIzECgHrb6w43wuWZSURtI5xjagzlXY56mSkACEgAFjePx4kxRO2pM1xYywgA6sctrAAAAAhIAAAABCQAAAACEgAAAAEJAACAgAQAAEBAAgAAgIAEAABAQAIAACAgAQAAEJAAAAAISAAAAAQkAAAAAhIAAAAEJAAAAAISAAAAAQkAAICABAAAQEACAAAgIAEAABCQAAAAICABAAAQkAAAACxVYgTwYzv3t/1w6ZsEACxPfnPeMgWIl08gAQAAEJAAAAAISAAAAAQkAAAAAhIAAAABCQAAgIAEAAAAAQkAAEA5raIoTAGARtnrDuv25ja9HPVSJwNA7HwCCQAAgIAEAABAQAIAACAgAQAAEJAAAAAISAAAAAQkAAAACEgAAAAEJAAAAAISAAAAAQkAAICABAAAQEACAAAgIAEAAEBAAgAAICABAAAQkAAAAAhIAAAABCQAAAACEgAAAAEJAAAAAhIAAAABCQAAgIAEAABAQAIAACAgAQAAEJAAAAAISAAAABCQAAAACEgAAAAEJAAAAAISAAAAAQkAAICABAAAQEACAACAgAQAAEBAAgAAICABAAAQkAAAAAhIAAAABCQAAAACEgAAAAQkAAAAAhIAAAABCQAAgIAEAABAQAIAACAgAQAAEJAAAAAgIAEAABCQAAAACEgAAAAEJAAAAAISAAAAAQkAAICABAAAAAEJAACAgAQAAEBAAgAAICABAAAQkAAAAAhIAAAABCQAAAAISAAAAAQkAAAAAhIAAAABCQAAgIAEAABAQAIAACAgAQAAQEACAAAgIAEAABCQAAAACEgAAAAEJAAAAAISAAAAAQkAAAACEgAAAAEJAACAgAQAAEBAAgAAICABAAAQkAAAAAhIAAAA+K9/BRgAavn+h78TSBsAAAAASUVORK5CYII=" alt="Tableau Sparkle logo" height="30" /> Solutions</a>
+</li></ul>
+<div id="starters" class="tabContent">
+<!-- ================================= STARTERS =================================  -->
+<p class="topic">1. Introduction to  Desktop</p>
+<div class="practice_link_dummy">There are no starter workbooks for this module.</div>
+<p class="topic">2. Desktop Workflow</p>
+<div class="practice_link_dummy">There are no starter workbooks for this module.</div>
+<p class="topic">3. Setting Up Connections and Data Sources</p>
+<a class="practice_link" href="./workbooks/starters/03_Setting Up Connections and Data Sources/Using_Split_Starter.twbx">Using split starter</a><span class="pagenumber"> (page xx)</span>
+<br />
+<a class="practice_link" href="./workbooks/starters/03_Setting Up Connections and Data Sources/Creating_a_Local_Data_Connection_Starter.twbx">Creating a local data connection starter</a><span class="pagenumber"> (page xx)</span>
+<br />
+<p class="topic">4. Simplifying and Sorting Your Data</p>
+<a class="practice_link" href="./workbooks/starters/04_Simplifying and Sorting Your Data/Filtering_Starter.twbx">Filtering starter</a><span class="pagenumber"> (page xx)</span>
+<br />
+<a class="practice_link" href="./workbooks/starters/04_Simplifying and Sorting Your Data/Sorting_Starter.twbx">Sorting starter</a><span class="pagenumber"> (page xx)</span>
+<br />
+<p class="topic">5. Organizing Your Data</p>
+<a class="practice_link" href="./workbooks/starters/05_Organizing Your Data/Creating_Groups_and_Hierarchies_Starter.twbx">Creating groups and hierarchies starter</a><span class="pagenumber"> (page xx)</span>
+<br />
+<a class="practice_link" href="./workbooks/starters/05_Organizing Your Data/Creating_Visual_Groupings_Starter.twbx">Creating visual groupings starter</a><span class="pagenumber"> (page xx)</span>
+<br />
+<p class="topic">6. Slicing Your Data by Date</p>
+<a class="practice_link" href="./workbooks/starters/06_Slicing Your Data by Date/Using_Discrete_and_Continuous_Dates_Starter.twbx">Using discrete and continuous dates starter</a><span class="pagenumber"> (page xx)</span>
+<br />
+<a class="practice_link" href="./workbooks/starters/06_Slicing Your Data by Date/Custom_Dates_Starter.twbx">Custom dates starter</a><span class="pagenumber"> (page xx)</span>
+<br />
+<p class="topic">7. Using Multiple Measures in a View</p>
+<a class="practice_link" href="./workbooks/starters/07_Using Multiple Measures in a View/Combined Axis Chart_Starter.twbx">Combined axis chart starter</a><span class="pagenumber"> (page xx)</span>
+<br />
+<a class="practice_link" href="./workbooks/starters/07_Using Multiple Measures in a View/Dual Axis Chart_Starter.twbx">Dual axis chart starter</a><span class="pagenumber"> (page xx)</span>
+<br />
+<p class="topic">8. Showing the Relationship Between Numerical Values</p>
+<a class="practice_link" href="./workbooks/starters/08_Showing the Relationship Between Numerical Values/Simple_Scatter_Plot_Starter.twbx">Simple scatter plot starter</a><span class="pagenumber"> (page xx)</span>
+<br />
+<a class="practice_link" href="./workbooks/starters/08_Showing the Relationship Between Numerical Values/Marketing_Expenses_Scatter_Plot_Starter.twbx">Marketing expenses scatter plot starter</a><span class="pagenumber"> (page xx)</span>
+<br />
+<p class="topic">9. Mapping Data Geographically</p>
+<a class="practice_link" href="./workbooks/starters/09_Mapping Data Geographically/European Airports Starter.twbx">European airports starter</a><span class="pagenumber"> (page xx)</span>
+<br />
+<a class="practice_link" href="./workbooks/starters/09_Mapping Data Geographically/Geographic_Groups_Starter.twbx">Geographic groups starter</a><span class="pagenumber"> (page xx)</span>
+<br />
+<p class="topic">10. Viewing Specific Values</p>
+<a class="practice_link" href="./workbooks/starters/10_Viewing Specific Values/Crosstabs_and_Totals_Starter.twbx">Crosstabs and totals starter</a><span class="pagenumber"> (page xx)</span>
+<br />
+<a class="practice_link" href="./workbooks/starters/10_Viewing Specific Values/Highlight_Table_Starter.twbx">Highlight table starter</a><span class="pagenumber"> (page xx)</span>
+<br />
+<a class="practice_link" href="./workbooks/starters/10_Viewing Specific Values/Heat_Map_Starter.twbx">Heat map starter</a><span class="pagenumber"> (page xx)</span>
+<br />
+<p class="topic">11. Customizing Your Data</p>
+<a class="practice_link" href="./workbooks/starters/11_Customizing Your Data/Calculations and Aggregations Profit Ratio Starter.twbx">Calculations and aggregations profit ratio starter</a><span class="pagenumber"> (page xx)</span>
+<br />
+<a class="practice_link" href="./workbooks/starters/11_Customizing Your Data/Using_Date_Calculations_Starter.twbx">Using date calculations starter</a><span class="pagenumber"> (page xx)</span>
+<br />
+<p class="topic">12. Analyzing Data with Quick Table Calculations</p>
+<a class="practice_link" href="./workbooks/starters/12_Analyzing Data with Quick Table Calculations/Year_over_Year_Change_Starter.twbx">Year over year change starter</a><span class="pagenumber"> (page xx)</span>
+<br />
+<a class="practice_link" href="./workbooks/starters/12_Analyzing Data with Quick Table Calculations/Running_Total_of_Sales_Starter.twbx">Running total of sales starter</a><span class="pagenumber"> (page xx)</span>
+<br />
+<p class="topic">13. Showing Breakdowns of the Whole</p>
+<a class="practice_link" href="./workbooks/starters/13_Showing Breakdowns of the Whole/Percent_of_Total_Starter.twbx">Percent of total starter</a><span class="pagenumber"> (page xx)</span>
+<br />
+<a class="practice_link" href="./workbooks/starters/13_Showing Breakdowns of the Whole/Tree_Map_Starter.twbx">Tree map starter</a><span class="pagenumber"> (page xx)</span>
+<br />
+<p class="topic">14. Highlighting Data with Reference Lines</p>
+<a class="practice_link" href="./workbooks/starters/14_Highlighting Data with Reference Lines/Reference_Line_Starter.twbx">Reference line starter</a><span class="pagenumber"> (page xx)</span>
+<br />
+<p class="topic">15. Making Your Views Available</p>
+<a class="practice_link" href="./workbooks/starters/15_Making Your Views Available/Building_a_Dashboard_Starter.twbx">Building a dashboard starter</a><span class="pagenumber"> (page xx)</span>
+<br />
+<a class="practice_link" href="./workbooks/starters/15_Making Your Views Available/Creating_an_Interactive_Dashboard_Starter.twbx">Creating an interactive dashboard starter</a><span class="pagenumber"> (page xx)</span>
+<br />
+<br /><br />
+</div><div id="solutions" class="tabContent">
+<!-- ================================= SOLUTIONS =================================  -->
+<p class="topic">1. Introduction to  Desktop</p>
+<div class="practice_link_dummy">There are no solutions for this module.</div>
+<p class="topic">2. Desktop Workflow</p>
+<a class="practice_link" href="./workbooks/solutions/02_Desktop Workflow/Exploring Tableau and the Data Solution.twbx">Exploring tableau and the data solution</a><span class="pagenumber"> (page xx)</span>
+<br />
+<p class="topic">3. Setting Up Connections and Data Sources</p>
+<a class="practice_link" href="./workbooks/solutions/03_Setting Up Connections and Data Sources/Using_Split_Solution.twbx">Using split solution</a><span class="pagenumber"> (page xx)</span>
+<br />
+<a class="practice_link" href="./workbooks/solutions/03_Setting Up Connections and Data Sources/Creating_a_Local_Data_Connection_Solution.twbx">Creating a local data connection solution</a><span class="pagenumber"> (page xx)</span>
+<br />
+<p class="topic">4. Simplifying and Sorting Your Data</p>
+<a class="practice_link" href="./workbooks/solutions/04_Simplifying and Sorting Your Data/Filtering_Solution.twbx">Filtering solution</a><span class="pagenumber"> (page xx)</span>
+<br />
+<a class="practice_link" href="./workbooks/solutions/04_Simplifying and Sorting Your Data/Sorting_Solution.twbx">Sorting solution</a><span class="pagenumber"> (page xx)</span>
+<br />
+<p class="topic">5. Organizing Your Data</p>
+<a class="practice_link" href="./workbooks/solutions/05_Organizing Your Data/Creating_Groups_and_Hierarchies_Solution.twbx">Creating groups and hierarchies solution</a><span class="pagenumber"> (page xx)</span>
+<br />
+<a class="practice_link" href="./workbooks/solutions/05_Organizing Your Data/Creating_Visual_Groupings_Solution.twbx">Creating visual groupings solution</a><span class="pagenumber"> (page xx)</span>
+<br />
+<p class="topic">6. Slicing Your Data by Date</p>
+<a class="practice_link" href="./workbooks/solutions/06_Slicing Your Data by Date/Using_Discrete_and_Continuous_Dates_Solution.twbx">Using discrete and continuous dates solution</a><span class="pagenumber"> (page xx)</span>
+<br />
+<a class="practice_link" href="./workbooks/solutions/06_Slicing Your Data by Date/Custom_Dates_Solution.twbx">Custom dates solution</a><span class="pagenumber"> (page xx)</span>
+<br />
+<p class="topic">7. Using Multiple Measures in a View</p>
+<a class="practice_link" href="./workbooks/solutions/07_Using Multiple Measures in a View/Combined Axis Chart _Solution.twbx">Combined axis chart  solution</a><span class="pagenumber"> (page xx)</span>
+<br />
+<a class="practice_link" href="./workbooks/solutions/07_Using Multiple Measures in a View/Dual Axis Chart_Solution.twbx">Dual axis chart solution</a><span class="pagenumber"> (page xx)</span>
+<br />
+<p class="topic">8. Showing the Relationship Between Numerical Values</p>
+<a class="practice_link" href="./workbooks/solutions/08_Showing the Relationship Between Numerical Values/Simple_Scatter_Plot_Solution.twbx">Simple scatter plot solution</a><span class="pagenumber"> (page xx)</span>
+<br />
+<a class="practice_link" href="./workbooks/solutions/08_Showing the Relationship Between Numerical Values/Marketing_Expenses_Scatter_Plot_Solution.twbx">Marketing expenses scatter plot solution</a><span class="pagenumber"> (page xx)</span>
+<br />
+<p class="topic">9. Mapping Data Geographically</p>
+<a class="practice_link" href="./workbooks/solutions/09_Mapping Data Geographically/European Airports Solution.twbx">European airports solution</a><span class="pagenumber"> (page xx)</span>
+<br />
+<a class="practice_link" href="./workbooks/solutions/09_Mapping Data Geographically/Geographic_Groups_Solution.twbx">Geographic groups solution</a><span class="pagenumber"> (page xx)</span>
+<br />
+<p class="topic">10. Viewing Specific Values</p>
+<a class="practice_link" href="./workbooks/solutions/10_Viewing Specific Values/Crosstabs_and_Totals_Solution.twbx">Crosstabs and totals solution</a><span class="pagenumber"> (page xx)</span>
+<br />
+<a class="practice_link" href="./workbooks/solutions/10_Viewing Specific Values/Highlight_Table_Solution.twbx">Highlight table solution</a><span class="pagenumber"> (page xx)</span>
+<br />
+<a class="practice_link" href="./workbooks/solutions/10_Viewing Specific Values/Heat_Map_Solution.twbx">Heat map solution</a><span class="pagenumber"> (page xx)</span>
+<br />
+<p class="topic">11. Customizing Your Data</p>
+<a class="practice_link" href="./workbooks/solutions/11_Customizing Your Data/Calculations and Aggregations Profit Ratio Solution.twbx">Calculations and aggregations profit ratio solution</a><span class="pagenumber"> (page xx)</span>
+<br />
+<a class="practice_link" href="./workbooks/solutions/11_Customizing Your Data/Using_Date_Calculations_Solution.twbx">Using date calculations solution</a><span class="pagenumber"> (page xx)</span>
+<br />
+<p class="topic">12. Analyzing Data with Quick Table Calculations</p>
+<a class="practice_link" href="./workbooks/solutions/12_Analyzing Data with Quick Table Calculations/Year_Over_Year_Change_Solution.twbx">Year over year change solution</a><span class="pagenumber"> (page xx)</span>
+<br />
+<a class="practice_link" href="./workbooks/solutions/12_Analyzing Data with Quick Table Calculations/Running_Total_of_Sales_Solution.twbx">Running total of sales solution</a><span class="pagenumber"> (page xx)</span>
+<br />
+<p class="topic">13. Showing Breakdowns of the Whole</p>
+<a class="practice_link" href="./workbooks/solutions/13_Showing Breakdowns of the Whole/Percent_of_Total_Solution.twbx">Percent of total solution</a><span class="pagenumber"> (page xx)</span>
+<br />
+<a class="practice_link" href="./workbooks/solutions/13_Showing Breakdowns of the Whole/Tree_Map_Solution.twbx">Tree map solution</a><span class="pagenumber"> (page xx)</span>
+<br />
+<p class="topic">14. Highlighting Data with Reference Lines</p>
+<a class="practice_link" href="./workbooks/solutions/14_Highlighting Data with Reference Lines/Reference_Line_Solution.twbx">Reference line solution</a><span class="pagenumber"> (page xx)</span>
+<br />
+<p class="topic">15. Making Your Views Available</p>
+<a class="practice_link" href="./workbooks/solutions/15_Making Your Views Available/Building_a_Dashboard_Solution.twbx">Building a dashboard solution</a><span class="pagenumber"> (page xx)</span>
+<br />
+<a class="practice_link" href="./workbooks/solutions/15_Making Your Views Available/Creating_an_Interactive_Dashboard_Solution.twbx">Creating an interactive dashboard solution</a><span class="pagenumber"> (page xx)</span>
+<br />
+</div><br /><br />
+<div class="legal">© 2003-2017 Tableau Software. All Rights Reserved.</div>
+<script>
+        // These functions control the tab functionality on the page.
+        // This code is from the article, "JavaScript Tabs - Create Tabbed Web Pages Easily"
+        // http://www.elated.com/articles/javascript-tabs/
+
+        var tabLinks = new Array();
+        var contentDivs = new Array();
+
+        function init() {
+
+            // Grab the tab links and content divs from the page
+            var tabListItems = document.getElementById('tabs').childNodes;
+            for (var i = 0; i < tabListItems.length; i++) {
+                if (tabListItems[i].nodeName == "LI") {
+                    var tabLink = getFirstChildWithTagName(tabListItems[i], 'A');
+                    var id = getHash(tabLink.getAttribute('href'));
+                    tabLinks[id] = tabLink;
+                    contentDivs[id] = document.getElementById(id);
+                }
+            }
+
+            // Assign onclick events to the tab links, and
+            // highlight the first tab
+            var i = 0;
+
+            for (var id in tabLinks) {
+                tabLinks[id].onclick = showTab;
+                tabLinks[id].onfocus = function () { this.blur() };
+                if (i == 0) tabLinks[id].className = 'selected';
+                i++;
+            }
+
+            // Hide all content divs except the first
+            var i = 0;
+
+            for (var id in contentDivs) {
+                if (i != 0) contentDivs[id].className = 'tabContent hide';
+                i++;
+            }
+        }
+        
+        // showTab() is called whenever a tab link is clicked. It highlights the selected
+        // tab and shows the associated content <div>. It also dims all other tabs and 
+        // hides all other content <div>'s.
+        function showTab() {
+            var selectedId = getHash(this.getAttribute('href'));
+
+            // Highlight the selected tab, and dim all others.
+            // Also show the selected content div, and hide all others.
+            for (var id in contentDivs) {
+                if (id == selectedId) {
+                    tabLinks[id].className = 'selected';
+                    contentDivs[id].className = 'tabContent';
+                } else {
+                    tabLinks[id].className = '';
+                    contentDivs[id].className = 'tabContent hide';
+                }
+            }
+
+            // Stop the browser following the link
+            return false;
+        }
+
+        // The getFirstChildWithTagName() helper function  returns the first child
+        // of a specified element which matches a specified tag name.
+        // init() calls this function to retrieve the <a> link element inside each list
+        // item in the <tabs> list.
+        function getFirstChildWithTagName(element, tagName) {
+            for (var i = 0; i < element.childNodes.length; i++) {
+                if (element.childNodes[i].nodeName == tagName) return element.childNodes[i];
+            }
+        }
+
+        // The getHash() helper function returns the portion of a URL after any hash symbol.
+        // Used by init() and showTab() to extract the content <div> ID referenced in a tab link.
+        function getHash(url) {
+            var hashPos = url.lastIndexOf('#');
+            return url.substring(hashPos + 1);
+        }
+    </script></body>
+</html>
